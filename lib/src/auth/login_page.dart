@@ -46,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
 
     // Aquí iría la lógica de autenticación
     // Por ahora, solo navegamos a la página principal
-    context.go('/home');
+    context.go('/todos');
   }
 
   @override
@@ -125,7 +125,9 @@ class _LoginPageState extends State<LoginPage> {
                           obscureText: !_isPasswordVisible,
                           suffixIcon: IconButton(
                             icon: Icon(
-                              _isPasswordVisible ? Icons.visibility_off : Icons.visibility,
+                              _isPasswordVisible
+                                  ? Icons.visibility_off
+                                  : Icons.visibility,
                               color: Colors.grey,
                             ),
                             onPressed: () {
