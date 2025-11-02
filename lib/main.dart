@@ -59,12 +59,6 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Todo - App',
-      // initialRoute: '/',
-      // home: AdminTodoPage(), // mi primer widget personalizado
-      // routes: {
-      //   '/': (context) => HomePage(),
-      //   '/admin-todos': (context) => AdminTodoPage(),
-      // },
     );
   }
 }
